@@ -8,4 +8,8 @@
   --border-color: rgba(0, 255, 255, 0.75);
 }
 
-/*# sourceMappingURL=color.css.map */
+:root {
+  --border-size: 2px;
+}
+
+/*# sourceMappingURL=variables.css.map */

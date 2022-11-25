@@ -2,13 +2,14 @@
   "name": "themes",
   "version": "1.0.0",
   "description": "AlasDiablo Themes",
-  "main": "index.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
-    "build": "sass src:dist --style compressed",
-    "build:watch": "sass --watch src/black-hole:dist/black-hole --style compressed",
+    "build": "npm run build:sass && npm run build:min",
+    "build:sass": "sass src:dist",
+    "build:min": "rimraf dist/**/*.min.* && postcss dist/**/*.css --base dist --dir dist --ext min.css",
+    "build:watch": "sass --watch src/black-hole:dist/black-hole",
     "stylelint": "stylelint \"src/**/*.scss\" --rd",
     "test": "npm run stylelint"
   },
@@ -22,6 +23,9 @@
   "author": "AlasDiablo",
   "license": "MIT",
   "devDependencies": {
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
     "prettier": "2.8.0",
     "sass": "^1.56.1",
     "stylelint": "^14.15.0",

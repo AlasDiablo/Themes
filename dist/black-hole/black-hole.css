@@ -1,3 +1,49 @@
+:root {
+  --black-color: #000;
+  --cyan-color: #0ff;
+  --white-color: #fff;
+  --light-gray-color: #c8c8c8;
+  --gray-color: #959595;
+  --dark-gray-color: #4f4f4f;
+  --border-color: rgba(0, 255, 255, 0.75);
+}
+
+:root {
+  --border-size: 2px;
+}
+
+* {
+  scrollbar-color: rgba(0, 255, 255, 0.75) rgba(0, 0, 0, 0.9);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 255, 255, 0.75);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 180, 180, 0.8);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 121, 121, 0.85);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  text-shadow: rgba(255, 255, 255, 0.75) 0 0 40px;
+  background-color: #000;
+}
+
 input[type=button],
 input[type=submit],
 input[type=reset],
@@ -116,4 +162,4 @@ input[type=range]:disabled::-webkit-slider-thumb {
   border-color: #959595;
 }
 
-/*# sourceMappingURL=inputs.css.map */
+/*# sourceMappingURL=black-hole.css.map */
