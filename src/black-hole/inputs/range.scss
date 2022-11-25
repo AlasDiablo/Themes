@@ -1,0 +1,68 @@
+@import "../colors";
+@import "../functions";
+
+input[type="range"] {
+  width: 100%;
+  height: 5px;
+  background: $dark-gray;
+  border-color: $border;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  outline: none;
+  transition: .1s;
+  appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: $dark-gray;
+  border-color: $border;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  transition: .1s;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: $dark-gray;
+  border-color: $border;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  transition: .1s;
+  transform: translate(0, -1px);
+  appearance: none;
+}
+
+input[type="range"]:active {
+  background-color: tint-color($dark-gray, 12);
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background-color: tint-color($dark-gray, 12);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: tint-color($dark-gray, 12);
+}
+
+input[type="range"]:disabled {
+  border-color: $gray;
+}
+
+input[type="range"]:disabled::-moz-range-thumb {
+  background-color: $dark-gray;
+  border-color: $gray;
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+  background-color: $dark-gray;
+  border-color: $gray;
+}

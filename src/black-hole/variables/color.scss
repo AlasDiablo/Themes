@@ -1,0 +1,12 @@
+@import "../colors";
+
+:root {
+  --black-color: #{$black};
+  --cyan-color: #{$cyan};
+  --white-color: #{$white};
+  --light-gray-color: #{$light-gray};
+  --gray-color: #{$gray};
+  --dark-gray-color: #{$dark-gray};
+
+  --border-color: #{$border};
+}
