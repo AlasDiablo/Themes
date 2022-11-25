@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/black-hole/root.scss","../../src/black-hole/_colors.scss"],"names":[],"mappings":"AAGA,EACE,mDACA,qBAGF,qBACE,UACA,WACA,gCAGF,2BACE,iBCRO,oBDWT,iCACE,oCAGF,kCACE,qCAGF,UACE,YACA,SACA,MC5BM,KD6BN,2CACA,iBC1BM","file":"root.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/black-hole/root.scss","../../src/black-hole/_colors.scss"],"names":[],"mappings":"AAGA,EACE,mDACA,qBAGF,qBACE,UACA,WACA,gCAGF,2BACE,iBCRO,oBDWT,iCACE,oCAGF,kCACE,qCAGF,UAEE,YACA,SACA,MC7BM,KD8BN,2CACA,iBC3BM","file":"root.css"}
