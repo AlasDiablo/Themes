@@ -29,6 +29,7 @@ body {
   height: 100%;
   margin: 0;
   color: $white;
-  text-shadow: rgba($white, .75) 0 0 40px;
+  // text-shadow: rgba($white, .75) 0 0 40px;
+  text-shadow: 0 0 2.5em rgba($white, .5), 0 0 .8em rgba($white, .5);
   background-color: $black;
 }

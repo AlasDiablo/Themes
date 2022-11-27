@@ -11,7 +11,8 @@
     "build:min": "rimraf dist/**/*.min.* && postcss dist/**/*.css --base dist --dir dist --ext min.css",
     "build:watch": "sass --watch src/black-hole:dist/black-hole",
     "stylelint": "stylelint \"src/**/*.scss\" --rd",
-    "test": "npm run stylelint"
+    "test": "npm run stylelint",
+    "start:dev": "vite"
   },
   "keywords": [
     "SCSS",
@@ -30,6 +31,7 @@
     "sass": "^1.56.1",
     "stylelint": "^14.15.0",
     "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-twbs-bootstrap": "^7.0.0"
+    "stylelint-config-twbs-bootstrap": "^7.0.0",
+    "vite": "^3.2.4"
   }
 }
