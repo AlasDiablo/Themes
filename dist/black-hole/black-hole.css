@@ -79,19 +79,25 @@ button:hover {
   text-decoration: underline;
 }
 
-input[disabled],
+input[type=button]:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled,
 button[disabled] {
   color: #959595;
 }
 
-input[disabled]:active,
+input[type=button]:disabled:active,
+input[type=submit]:disabled:active,
+input[type=reset]:disabled:active,
 button[disabled]:active {
   box-shadow: 0 3px #959595;
   transition-duration: 0s;
   transform: translateY(0);
 }
 
-input[disabled]:hover,
+input[type=button]:disabled:hover,
+input[type=submit]:disabled:hover,
+input[type=reset]:disabled:hover,
 button[disabled]:hover {
   text-decoration: none;
 }
@@ -123,8 +129,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   background: #4f4f4f;
   border-color: rgba(0, 255, 255, 0.75);

@@ -1,5 +1,5 @@
-@import "colors";
-@import "functions";
+@import "utils/colors";
+@import "utils/functions";
 
 * {
   scrollbar-color: rgba($border-color, .75) rgba($black, .9);

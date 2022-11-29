@@ -1,5 +1,5 @@
-@import "../colors";
-@import "../layout";
+@import "../utils/colors";
+@import "../utils/layout";
 
 input[type="button"],
 input[type="submit"],
@@ -36,19 +36,25 @@ button:hover {
   text-decoration: underline;
 }
 
-input[disabled],
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
 button[disabled] {
   color: $gray;
 }
 
-input[disabled]:active,
+input[type="button"]:disabled:active,
+input[type="submit"]:disabled:active,
+input[type="reset"]:disabled:active,
 button[disabled]:active {
   box-shadow: 0 3px $gray;
   transition-duration: 0s;
   transform: translateY(0);
 }
 
-input[disabled]:hover,
+input[type="button"]:disabled:hover,
+input[type="submit"]:disabled:hover,
+input[type="reset"]:disabled:hover,
 button[disabled]:hover {
   text-decoration: none;
 }
