@@ -1,3 +1,6 @@
+/***************************************
+ *           Border static             *
+ ***************************************/
 .border {
   clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
 }
@@ -14,13 +17,12 @@
   clip-path: polygon(calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px), 0% 0%);
 }
 
+/***************************************
+ *           Border animation          *
+ ***************************************/
 .border-animated {
   clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
   transition-duration: 0.25s;
-}
-
-.border-animated:hover {
-  clip-path: polygon(calc(100% - 24px) 0%, 100% 24px, 100% 100%, 24px 100%, 0% calc(100% - 24px), 0% 0%);
 }
 
 .border-animated-revers {
@@ -28,17 +30,9 @@
   transition-duration: 0.25s;
 }
 
-.border-animated-revers:hover {
-  clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
-}
-
 .border-animated-small {
   clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
   transition-duration: 0.25s;
-}
-
-.border-animated-small:hover {
-  clip-path: polygon(calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px), 0% 0%);
 }
 
 .border-animated-revers-small {
@@ -46,8 +40,53 @@
   transition-duration: 0.25s;
 }
 
+.border-animated:hover {
+  clip-path: polygon(calc(100% - 24px) 0%, 100% 24px, 100% 100%, 24px 100%, 0% calc(100% - 24px), 0% 0%);
+}
+
+.border-animated-revers:hover {
+  clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
+}
+
+.border-animated-small:hover {
+  clip-path: polygon(calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px), 0% 0%);
+}
+
 .border-animated-revers-small:hover {
   clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+}
+
+/***************************************
+ *     Border alternative animation    *
+ ***************************************/
+.border-animated-alternative {
+  clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
+  transition-duration: 0.25s;
+}
+
+.border-animated-alternative-revers {
+  clip-path: polygon(calc(100% - 24px) 0%, 100% 24px, 100% 100%, 24px 100%, 0% calc(100% - 24px), 0% 0%);
+  transition-duration: 0.25s;
+}
+
+.border-animated-alternative-small {
+  clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+  transition-duration: 0.25s;
+}
+
+.border-animated-alternative-revers-small {
+  clip-path: polygon(calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px), 0% 0%);
+  transition-duration: 0.25s;
+}
+
+.border-animated-alternative:hover,
+.border-animated-alternative-small:hover {
+  clip-path: polygon(4px 0%, 100% 0%, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0% 100%, 0% 4px);
+}
+
+.border-animated-alternative-revers:hover,
+.border-animated-alternative-revers-small:hover {
+  clip-path: polygon(calc(100% - 4px) 0%, 100% 4px, 100% 100%, 4px 100%, 0% calc(100% - 4px), 0% 0%);
 }
 
 /*# sourceMappingURL=shapes.css.map */
