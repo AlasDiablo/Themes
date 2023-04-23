@@ -6,10 +6,11 @@
     "doc": "doc"
   },
   "scripts": {
-    "build": "npm run build:sass && npm run build:min",
-    "build:sass": "sass src:dist",
-    "build:min": "rimraf dist/**/*.min.* && postcss dist/**/*.css --base dist --dir dist --ext min.css",
-    "build:watch": "sass --watch src/black-hole:dist/black-hole",
+    "build": "npm run build:sass && npm run copy:font && npm run build:min",
+    "build:sass": "sass src:doc/dist",
+    "build:min": "rimraf doc/dist/**/*.min.* && postcss doc/dist/**/*.css --base doc/dist --dir doc/dist --ext min.css",
+    "copy:font": "copyfiles -u 1 -e \"src/**/font/**/*.scss\" \"src/**/font/**/*.woff2\" doc/dist",
+    "build:watch": "sass --watch src:doc/dist",
     "stylelint": "stylelint \"src/**/*.scss\" --rd",
     "test": "npm run stylelint",
     "start:dev": "vite"
@@ -24,6 +25,7 @@
   "author": "AlasDiablo",
   "license": "MIT",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "cssnano": "^5.1.14",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",

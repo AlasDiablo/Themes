@@ -1,0 +1,43 @@
+.block {
+    width: 50%;
+    margin: 12px auto;
+}
+
+.content {
+    display: flex;
+    margin: 24px;
+}
+
+.div-content {
+    padding: 12px;
+    background-color: #dee2e6;
+}
+
+.side {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.middle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.placeholder {
+    font-size: 1.125rem;
+    user-select: none;
+    text-anchor: middle;
+}
+
+.code-block {
+    background-color: #eee;
+}
+
+.code {
+    border: none;
+    width: 100%;
+    background-color: #eee;
+    resize: none;
+    overflow: hidden;
+    color: black;
+}
