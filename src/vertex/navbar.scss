@@ -1,0 +1,106 @@
+@import "variables/color";
+
+.nav-bar {
+  background-color: $container-background;
+  border-top: $border-color solid 2px;
+}
+
+.nav-bar:first-child {
+  border-left: $border-color solid 2px;
+}
+.nav-bar:last-child {
+  border-right: $border-color solid 2px;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-bar-brand {
+  width: fit-content;
+  height: calc(100% - 32px);
+  padding: 16px;
+  margin: 0;
+  clip-path:
+    polygon(
+      100% 0%,
+      100% calc(100% - 24px),
+      calc(100% - 24px) 100%,
+      0% 100%,
+      0% 0%
+    );
+  font-family: Xolonium, sans-serif;
+  font-size: calc(1.125rem + .3vw);
+  font-weight: 600;
+  color: $heading;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+.nav-bar-navigation {
+  width: fit-content;
+  height: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  clip-path:
+    polygon(
+      100% 0%,
+      100% 100%,
+      24px 100%,
+      0% calc(100% - 24px),
+      0% 0%
+    );
+  vertical-align: middle;
+
+  ul {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
+
+.nav-bar-button-container {
+  padding: 6px 0;
+  margin: 0 6px;
+  background: linear-gradient($heading, $heading) no-repeat 0 100%;
+  background-size: 3px 0;
+  transition: background-size .3s ease;
+
+  .nav-bar-button {
+    position: relative;
+    display: block;
+    padding: 2px 6px 2px 14px;
+    margin-left: -6px;
+    font-family: Xolonium, sans-serif;
+    font-size: calc(1.125rem + .3vw);
+    font-weight: 600;
+    color: $heading;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    background: linear-gradient($heading, $heading) no-repeat 0 100%;
+    background-size: 0 3px;
+    transition: background-size .3s ease;
+  }
+}
+
+.nav-bar-button-container:hover,
+.nav-bar-button-container:focus {
+  background-size: 3px 100%;
+  .nav-bar-button {
+    background-size: 100% 3px;
+  }
+}

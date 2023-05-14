@@ -1,5 +1,12 @@
+$theme-black: #02090e !default;
+$theme-dark-blue: #081a2c !default;
+$theme-white: #eee !default;
+$border-color: rgba(#0ff, .75) !default;
+
 :root {
-  --background: #000;
-  --heading: #fff;
-  --text: #fff;
+  --background: #{$theme-black};
+  --heading: #{$theme-white};
+  --text: #{$theme-white};
+  --container-background: #{rgba($theme-dark-blue, .9)};
+  --border-color: #{$border-color};
 }
